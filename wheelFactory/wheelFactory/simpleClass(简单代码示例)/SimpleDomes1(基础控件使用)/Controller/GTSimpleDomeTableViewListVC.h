@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "GTSimpleUILabelVC.h"
 #import "GTSimpleUIButtonVC.h"
 #import "GTSimpleUITextFieldVC.h"
 

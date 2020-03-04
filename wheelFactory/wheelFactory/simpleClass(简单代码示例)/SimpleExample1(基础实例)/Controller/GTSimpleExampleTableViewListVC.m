@@ -1,28 +1,29 @@
 //
-//  GTSimpleDomeTableViewListVC.m
-//  testDemo
+//  GTSimpleExampleTableViewListVC.m
+//  wheelFactory
 //
-//  Created by GTY on 2020/1/3.
+//  Created by GTY on 2020/2/8.
 //  Copyright © 2020 YuGuTou. All rights reserved.
 //
 
-#import "GTSimpleDomeTableViewListVC.h"
+#import "GTSimpleExampleTableViewListVC.h"
+#import "GTNewGuideViewController.h"
 
-@interface GTSimpleDomeTableViewListVC ()<UITableViewDelegate,UITableViewDataSource>
+@interface GTSimpleExampleTableViewListVC ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic, strong)UITableView * tableView;
 @property (nonatomic, strong)NSArray * arrayList;
 
 @end
 
-@implementation GTSimpleDomeTableViewListVC
+@implementation GTSimpleExampleTableViewListVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"UIKit";
     self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.tableView];
-    self.arrayList = @[@"UIView",@"UILabel",@"UIButton",@"UIImageView",@"UITextField",@"UIScrollView",@"UIAlertView",@"UIPickerView",@"",@"",@"",];
+    self.arrayList = @[@"引导页",@"UILabel",@"UIButton",@"UIImageView",@"UITextField",@"UIScrollView",@"UIAlertView",@"UIPickerView",@"",@"",@"",];
 }
 
 #pragma mark - 懒加载
@@ -84,15 +85,18 @@
     UIViewController * vc;
     switch (index) {
         case 0:
-            
+        {
+           GTNewGuideViewController * gvc = [[GTNewGuideViewController alloc]init];
+           gvc.gtnewGuideImgArray = @[@"lead01.jpg",@"lead02.jpg",@"lead03.jpg",@"lead04.jpg",@"lead05.jpg"];
+           vc = gvc;
+        }
             break;
         case 1:
-           
-            vc = [[GTSimpleUILabelVC alloc]init];
+        
             break;
         case 2:
         {
-            vc = [[GTSimpleUIButtonVC alloc]init];
+            
         }
             break;
         case 3:
