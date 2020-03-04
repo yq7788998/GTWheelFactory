@@ -8,9 +8,10 @@
 
 #import "AppDelegate.h"
 #import "MainViewController.h"
+#import "GTBaseTabBarViewController.h"
 
 @interface AppDelegate ()
-@property (nonatomic, strong)MainViewController * mainVC;
+
 @end
 
 @implementation AppDelegate
@@ -18,13 +19,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    self.mainVC = [[MainViewController alloc]init];
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.rootViewController = [[UINavigationController alloc]initWithRootViewController:self.mainVC];
-    [self.window makeKeyAndVisible];
     
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    GTBaseTabBarViewController * baseTabBarVC = [GTBaseTabBarViewController new];
+    self.window.rootViewController = baseTabBarVC;
+    [self.window makeKeyAndVisible];
     return YES;
-
+    
 }
 
 

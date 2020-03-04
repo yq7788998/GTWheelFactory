@@ -26,9 +26,7 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    self.simpvc = [[GTSimpleExampleTableViewListVC alloc]init];
-//    self.simpvc = [[GTSimpleDomeTableViewListVC alloc]init];
-    [self.navigationController pushViewController:self.simpvc animated:YES];
+
 }
 
 
