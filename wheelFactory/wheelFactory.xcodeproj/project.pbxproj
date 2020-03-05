@@ -69,6 +69,7 @@
 		02844A2F240F8F52005E752F /* UIViewController+UKChangeStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 02844A12240F8F52005E752F /* UIViewController+UKChangeStyle.m */; };
 		02844A30240F8F52005E752F /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 02844A16240F8F52005E752F /* NSArray+Log.m */; };
 		02844A31240F8F52005E752F /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 02844A18240F8F52005E752F /* MBProgressHUD.m */; };
+		02844A372410ED75005E752F /* GTBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02844A362410ED75005E752F /* GTBaseTableViewController.m */; };
 		256D0D9ABC45B3CFCAB13A45 /* libPods-wheelFactory.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 72D3A01F22D2A0AB7A9DFA29 /* libPods-wheelFactory.a */; };
 /* End PBXBuildFile section */
 
@@ -196,6 +197,8 @@
 		02844A16240F8F52005E752F /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
 		02844A18240F8F52005E752F /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		02844A19240F8F52005E752F /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		02844A352410ED75005E752F /* GTBaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTBaseTableViewController.h; sourceTree = "<group>"; };
+		02844A362410ED75005E752F /* GTBaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTBaseTableViewController.m; sourceTree = "<group>"; };
 		02C727A123CDCF3500101048 /* MacrosHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacrosHeader.h; sourceTree = "<group>"; };
 		1852AD5A8F56059B9FE7FDA3 /* Pods-wheelFactory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wheelFactory.release.xcconfig"; path = "Target Support Files/Pods-wheelFactory/Pods-wheelFactory.release.xcconfig"; sourceTree = "<group>"; };
 		35CEBAE17CA813FE0B4FA1D0 /* Pods-wheelFactory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wheelFactory.debug.xcconfig"; path = "Target Support Files/Pods-wheelFactory/Pods-wheelFactory.debug.xcconfig"; sourceTree = "<group>"; };
@@ -310,6 +313,8 @@
 				028449D8240F6202005E752F /* GTBaseNavigationViewController.m */,
 				028449D4240F6181005E752F /* GTBaseTabBarViewController.h */,
 				028449D5240F6181005E752F /* GTBaseTabBarViewController.m */,
+				02844A352410ED75005E752F /* GTBaseTableViewController.h */,
+				02844A362410ED75005E752F /* GTBaseTableViewController.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -823,6 +828,7 @@
 				028449D2240F603B005E752F /* GTSimpleUIButtonVC.m in Sources */,
 				0238D1C423BF3BCE003ABFBB /* AppDelegate.m in Sources */,
 				02844A2E240F8F52005E752F /* NSString+BJExtension.m in Sources */,
+				02844A372410ED75005E752F /* GTBaseTableViewController.m in Sources */,
 				02844A1E240F8F52005E752F /* UIImage+Alpha.m in Sources */,
 				02844A25240F8F52005E752F /* UIView+Empty.m in Sources */,
 				02844A23240F8F52005E752F /* UIPickerView+ZFPicker.m in Sources */,

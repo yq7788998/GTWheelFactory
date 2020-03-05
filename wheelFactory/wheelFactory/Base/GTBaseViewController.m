@@ -7,7 +7,7 @@
 //
 
 #import "GTBaseViewController.h"
-
+static const NSTimeInterval kHudAutoHideDelay = 1.2f;
 @interface GTBaseViewController ()
 
 @end
@@ -215,6 +215,63 @@
 
 - (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation{
     return UIInterfaceOrientationPortrait;
+}
+
+#pragma mark - HUD
+- (MBProgressHUD*) showLoadingViewWithTitle:(NSString *)title
+{
+    [self hideHUD];
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    hud.mode = MBProgressHUDModeCustomView;
+    
+
+    NSString * bundlePath = [[NSBundle mainBundle] pathForResource: @"loging--" ofType :@"gif"];
+
+    NSData  *imageData = [NSData dataWithContentsOfFile:bundlePath];
+
+//    UIImageView *gifImageView = [[UIImageView alloc] initWithImage:[UIImage sd_animatedGIFWithData:imageData]];
+//    gifImageView.frame = CGRectMake(0, 0, AdaptedWidth(150), AdaptedWidth(80));
+    hud.customView = nil;
+    hud.color = [UIColor clearColor];
+    hud.labelText = title;
+    hud.labelColor = [UIColor blackColor];
+    hud.labelFont = [UIFont systemFontOfSize:14];
+    hud.opacity = 1;
+    return hud;
+}
+
+- (MBProgressHUD *) showHUDWithTitle:(NSString *)title type:(BWMMBProgressHUDMsgType)type {
+    return [self showHUDWithTitle:title hideAfterDelay:kHudAutoHideDelay type:type completion:nil];
+}
+
+- (MBProgressHUD *) showHUDWithTitle:(NSString *)title
+                                type:(BWMMBProgressHUDMsgType)type
+                          completion:(FHVoidBlock)completion {
+    return [self showHUDWithTitle:title hideAfterDelay:kHudAutoHideDelay type:type completion:completion];
+}
+
+- (MBProgressHUD *) showHUDWithTitle:(NSString *)title
+                      hideAfterDelay:(NSTimeInterval)delay
+                                type:(BWMMBProgressHUDMsgType)type
+                          completion:(FHVoidBlock)completion {
+    [MBProgressHUD hideHUDForView:self.view animated:YES];
+    MBProgressHUD *hud = [MBProgressHUD bwm_showTitle:title toView:kKeyWindow hideAfter:delay msgType:type];
+    
+    if (delay > 0) {
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delay * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            kSafeBlock(completion);
+        });
+    }
+    
+    return hud;
+}
+
+- (void)hideHUD {
+    [MBProgressHUD hideHUDForView:kKeyWindow animated:YES];
+}
+- (void)hideAllHUD {
+    // 隐藏本页面所有的加载环
+    [MBProgressHUD hideAllHUDsForView:kKeyWindow animated:YES];
 }
 
 

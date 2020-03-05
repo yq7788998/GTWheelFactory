@@ -13,6 +13,7 @@
 #import "MacrosHeader.h"
 #import "UIImage+Color.h"
 #import "UIView+Extension.h"
+#import "UIColor+HEX.h"
 
 
 #endif /* PrefixHeader_pch */
