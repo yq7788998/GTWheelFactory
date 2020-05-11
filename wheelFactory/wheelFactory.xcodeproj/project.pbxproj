@@ -17,6 +17,7 @@
 		0238D1DF23BF3BD1003ABFBB /* wheelFactoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0238D1DE23BF3BD1003ABFBB /* wheelFactoryTests.m */; };
 		0238D1EA23BF3BD1003ABFBB /* wheelFactoryUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0238D1E923BF3BD1003ABFBB /* wheelFactoryUITests.m */; };
 		0238D20423BF4D5D003ABFBB /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0238D20323BF4D5D003ABFBB /* MainViewController.m */; };
+		02790C3624498DAC0068DB66 /* GTVerificationCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02790C3524498DAC0068DB66 /* GTVerificationCodeViewController.m */; };
 		028449B9240F603B005E752F /* GTAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0284498F240F603B005E752F /* GTAnimationViewController.m */; };
 		028449BA240F603B005E752F /* GTNewGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02844992240F603B005E752F /* GTNewGuideViewController.m */; };
 		028449BB240F603B005E752F /* lead01@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 02844994240F603B005E752F /* lead01@2x.jpg */; };
@@ -70,6 +71,8 @@
 		02844A30240F8F52005E752F /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 02844A16240F8F52005E752F /* NSArray+Log.m */; };
 		02844A31240F8F52005E752F /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 02844A18240F8F52005E752F /* MBProgressHUD.m */; };
 		02844A372410ED75005E752F /* GTBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02844A362410ED75005E752F /* GTBaseTableViewController.m */; };
+		02A8F9842468FE4D00A91C76 /* GTMenuVisibleNoTextFieldView.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A8F9832468FE4D00A91C76 /* GTMenuVisibleNoTextFieldView.m */; };
+		02A8F987246925C500A91C76 /* GTActivationCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 02A8F986246925C500A91C76 /* GTActivationCodeView.m */; };
 		256D0D9ABC45B3CFCAB13A45 /* libPods-wheelFactory.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 72D3A01F22D2A0AB7A9DFA29 /* libPods-wheelFactory.a */; };
 /* End PBXBuildFile section */
 
@@ -111,6 +114,8 @@
 		0238D1EB23BF3BD1003ABFBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0238D20223BF4D5D003ABFBB /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		0238D20323BF4D5D003ABFBB /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		02790C3424498DAC0068DB66 /* GTVerificationCodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTVerificationCodeViewController.h; sourceTree = "<group>"; };
+		02790C3524498DAC0068DB66 /* GTVerificationCodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTVerificationCodeViewController.m; sourceTree = "<group>"; };
 		0284498F240F603B005E752F /* GTAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTAnimationViewController.m; sourceTree = "<group>"; };
 		02844990240F603B005E752F /* GTAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTAnimationViewController.h; sourceTree = "<group>"; };
 		02844992240F603B005E752F /* GTNewGuideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTNewGuideViewController.m; sourceTree = "<group>"; };
@@ -199,6 +204,10 @@
 		02844A19240F8F52005E752F /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		02844A352410ED75005E752F /* GTBaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTBaseTableViewController.h; sourceTree = "<group>"; };
 		02844A362410ED75005E752F /* GTBaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTBaseTableViewController.m; sourceTree = "<group>"; };
+		02A8F9822468FE4D00A91C76 /* GTMenuVisibleNoTextFieldView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTMenuVisibleNoTextFieldView.h; sourceTree = "<group>"; };
+		02A8F9832468FE4D00A91C76 /* GTMenuVisibleNoTextFieldView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTMenuVisibleNoTextFieldView.m; sourceTree = "<group>"; };
+		02A8F985246925C500A91C76 /* GTActivationCodeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTActivationCodeView.h; sourceTree = "<group>"; };
+		02A8F986246925C500A91C76 /* GTActivationCodeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTActivationCodeView.m; sourceTree = "<group>"; };
 		02C727A123CDCF3500101048 /* MacrosHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacrosHeader.h; sourceTree = "<group>"; };
 		1852AD5A8F56059B9FE7FDA3 /* Pods-wheelFactory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wheelFactory.release.xcconfig"; path = "Target Support Files/Pods-wheelFactory/Pods-wheelFactory.release.xcconfig"; sourceTree = "<group>"; };
 		35CEBAE17CA813FE0B4FA1D0 /* Pods-wheelFactory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wheelFactory.debug.xcconfig"; path = "Target Support Files/Pods-wheelFactory/Pods-wheelFactory.debug.xcconfig"; sourceTree = "<group>"; };
@@ -297,6 +306,16 @@
 			path = wheelFactoryUITests;
 			sourceTree = "<group>";
 		};
+		02790C3324498D5F0068DB66 /* VerificationCodeView(激活码) */ = {
+			isa = PBXGroup;
+			children = (
+				02790C3424498DAC0068DB66 /* GTVerificationCodeViewController.h */,
+				02790C3524498DAC0068DB66 /* GTVerificationCodeViewController.m */,
+				02A8F9812468FDE800A91C76 /* GTVerificationCodeView */,
+			);
+			path = "VerificationCodeView(激活码)";
+			sourceTree = "<group>";
+		};
 		02844987240F5EF6005E752F /* Other */ = {
 			isa = PBXGroup;
 			children = (
@@ -356,6 +375,7 @@
 		0284498D240F603B005E752F /* SimpleExample1(基础实例) */ = {
 			isa = PBXGroup;
 			children = (
+				02790C3324498D5F0068DB66 /* VerificationCodeView(激活码) */,
 				0284498E240F603B005E752F /* frameAnimation(帧动画) */,
 				02844991240F603B005E752F /* NewGuideVC(引导页) */,
 			);
@@ -428,11 +448,11 @@
 			isa = PBXGroup;
 			children = (
 				028449AC240F603B005E752F /* GTSimpleUIViewVC.h */,
+				028449B1240F603B005E752F /* GTSimpleUIViewVC.m */,
 				028449AD240F603B005E752F /* GTSimpleUIButtonVC.h */,
 				028449AE240F603B005E752F /* GTSimpleUITextFieldVC.m */,
 				028449AF240F603B005E752F /* GTSimpleUILabelVC.m */,
 				028449B0240F603B005E752F /* GTSimpleUIImageViewVC.m */,
-				028449B1240F603B005E752F /* GTSimpleUIViewVC.m */,
 				028449B2240F603B005E752F /* GTSimpleUIButtonVC.m */,
 				028449B3240F603B005E752F /* GTSimpleUIImageViewVC.h */,
 				028449B4240F603B005E752F /* GTSimpleUILabelVC.h */,
@@ -578,6 +598,17 @@
 				02844A19240F8F52005E752F /* MBProgressHUD.h */,
 			);
 			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		02A8F9812468FDE800A91C76 /* GTVerificationCodeView */ = {
+			isa = PBXGroup;
+			children = (
+				02A8F9822468FE4D00A91C76 /* GTMenuVisibleNoTextFieldView.h */,
+				02A8F9832468FE4D00A91C76 /* GTMenuVisibleNoTextFieldView.m */,
+				02A8F985246925C500A91C76 /* GTActivationCodeView.h */,
+				02A8F986246925C500A91C76 /* GTActivationCodeView.m */,
+			);
+			path = GTVerificationCodeView;
 			sourceTree = "<group>";
 		};
 		02C727A023CDCEF900101048 /* Macros */ = {
@@ -806,7 +837,9 @@
 				02844A1A240F8F52005E752F /* UIImage+Orientation.m in Sources */,
 				02844A31240F8F52005E752F /* MBProgressHUD.m in Sources */,
 				028449D9240F6202005E752F /* GTBaseNavigationViewController.m in Sources */,
+				02A8F987246925C500A91C76 /* GTActivationCodeView.m in Sources */,
 				02844A21240F8F52005E752F /* UIColor+Gradient.m in Sources */,
+				02790C3624498DAC0068DB66 /* GTVerificationCodeViewController.m in Sources */,
 				028449D3240F603B005E752F /* GTSimpleDomeTableViewListVC.m in Sources */,
 				028449D0240F603B005E752F /* GTSimpleUIImageViewVC.m in Sources */,
 				028449CD240F603B005E752F /* GTSimpleExampleTableViewListVC.m in Sources */,
@@ -822,6 +855,7 @@
 				028449D6240F6181005E752F /* GTBaseTabBarViewController.m in Sources */,
 				0238D20423BF4D5D003ABFBB /* MainViewController.m in Sources */,
 				028449BA240F603B005E752F /* GTNewGuideViewController.m in Sources */,
+				02A8F9842468FE4D00A91C76 /* GTMenuVisibleNoTextFieldView.m in Sources */,
 				02844A1D240F8F52005E752F /* UIImage+ThumbnailImage.m in Sources */,
 				028449DC240F6F51005E752F /* GTBaseViewController.m in Sources */,
 				028449CE240F603B005E752F /* GTSimpleUITextFieldVC.m in Sources */,
@@ -1011,6 +1045,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/wheelFactory/PrefixHeader.pch";
 				INFOPLIST_FILE = wheelFactory/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1031,6 +1066,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/wheelFactory/PrefixHeader.pch";
 				INFOPLIST_FILE = wheelFactory/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

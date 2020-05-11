@@ -8,6 +8,7 @@
 
 #import "GTSimpleExampleTableViewListVC.h"
 #import "GTNewGuideViewController.h"
+#import "GTVerificationCodeViewController.h"
 
 @interface GTSimpleExampleTableViewListVC ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -18,12 +19,22 @@
 
 @implementation GTSimpleExampleTableViewListVC
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self hiddenNavBar];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [self navigationBarNo];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 //    self.title = @"UIKit";
     self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.tableView];
-    self.arrayList = @[@"引导页",@"UILabel",@"UIButton",@"UIImageView",@"UITextField",@"UIScrollView",@"UIAlertView",@"UIPickerView",@"",@"",@"",];
+    self.arrayList = @[@"引导页",@"激活码",@"UIButton",@"UIImageView",@"UITextField",@"UIScrollView",@"UIAlertView",@"UIPickerView",@"",@"",@"",];
 }
 
 #pragma mark - 懒加载
@@ -92,7 +103,10 @@
         }
             break;
         case 1:
-        
+            {
+               GTVerificationCodeViewController * cvc = [[GTVerificationCodeViewController alloc]init];
+               vc = cvc;
+            }
             break;
         case 2:
         {

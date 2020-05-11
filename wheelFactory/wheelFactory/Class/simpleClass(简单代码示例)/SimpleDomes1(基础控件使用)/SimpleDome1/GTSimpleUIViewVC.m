@@ -16,14 +16,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
 }
 
-- (void) creatLine{
-//    UIView *line = [UIView new];
-//    line.backgroundColor = [UIColor colorWithHexString:@"#D8D8D8"];
-//    [self.backImgView addSubview:line];
+//常用线条
+- (void)creatLine{
+    UIView *line = [UIView new];
+    line.backgroundColor = [UIColor colorWithHexString:@"#D8D8D8"];
+    [self.view addSubview:line];
+    line.frame = CGRectMake(0, 0, Main_Screen_Width, 1);
 }
+
 
 
 @end
