@@ -9,6 +9,7 @@
 #import "GTSimpleExampleTableViewListVC.h"
 #import "GTNewGuideViewController.h"
 #import "GTVerificationCodeViewController.h"
+#import "GTTableViewToImageViewController.h"
 
 @interface GTSimpleExampleTableViewListVC ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -34,7 +35,7 @@
 //    self.title = @"UIKit";
     self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.tableView];
-    self.arrayList = @[@"引导页",@"激活码",@"UIButton",@"UIImageView",@"UITextField",@"UIScrollView",@"UIAlertView",@"UIPickerView",@"",@"",@"",];
+    self.arrayList = @[@"引导页",@"激活码",@"表示图转完整图片",@"UIImageView",@"UITextField",@"UIScrollView",@"UIAlertView",@"UIPickerView",@"",@"",@"",];
 }
 
 #pragma mark - 懒加载
@@ -110,7 +111,8 @@
             break;
         case 2:
         {
-            
+            GTTableViewToImageViewController * tvc = [[GTTableViewToImageViewController alloc]init];
+            vc = tvc;
         }
             break;
         case 3:

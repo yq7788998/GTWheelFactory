@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		020779A3246A419F0004C86A /* GTTableViewToImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 020779A2246A419F0004C86A /* GTTableViewToImageViewController.m */; };
+		020779AB246A4E870004C86A /* YSHYImageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 020779A5246A4E870004C86A /* YSHYImageScrollView.m */; };
+		020779AC246A4E870004C86A /* YSHYZoomScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 020779A6246A4E870004C86A /* YSHYZoomScrollView.m */; };
+		020779AD246A4E870004C86A /* ShowBigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 020779A7246A4E870004C86A /* ShowBigViewController.m */; };
 		0238D1C423BF3BCE003ABFBB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0238D1C323BF3BCE003ABFBB /* AppDelegate.m */; };
 		0238D1C723BF3BCE003ABFBB /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0238D1C623BF3BCE003ABFBB /* SceneDelegate.m */; };
 		0238D1CA23BF3BCE003ABFBB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0238D1C923BF3BCE003ABFBB /* ViewController.m */; };
@@ -94,6 +98,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		020779A1246A419F0004C86A /* GTTableViewToImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTTableViewToImageViewController.h; sourceTree = "<group>"; };
+		020779A2246A419F0004C86A /* GTTableViewToImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTTableViewToImageViewController.m; sourceTree = "<group>"; };
+		020779A5246A4E870004C86A /* YSHYImageScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSHYImageScrollView.m; sourceTree = "<group>"; };
+		020779A6246A4E870004C86A /* YSHYZoomScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSHYZoomScrollView.m; sourceTree = "<group>"; };
+		020779A7246A4E870004C86A /* ShowBigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowBigViewController.m; sourceTree = "<group>"; };
+		020779A8246A4E870004C86A /* YSHYImageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSHYImageScrollView.h; sourceTree = "<group>"; };
+		020779A9246A4E870004C86A /* YSHYZoomScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSHYZoomScrollView.h; sourceTree = "<group>"; };
+		020779AA246A4E870004C86A /* ShowBigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowBigViewController.h; sourceTree = "<group>"; };
 		0238D1BF23BF3BCE003ABFBB /* wheelFactory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wheelFactory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0238D1C223BF3BCE003ABFBB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0238D1C323BF3BCE003ABFBB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -240,6 +252,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0207799F246A40920004C86A /* TableViewToImageView(表示图转完整图片) */ = {
+			isa = PBXGroup;
+			children = (
+				020779A1246A419F0004C86A /* GTTableViewToImageViewController.h */,
+				020779A2246A419F0004C86A /* GTTableViewToImageViewController.m */,
+			);
+			path = "TableViewToImageView(表示图转完整图片)";
+			sourceTree = "<group>";
+		};
+		020779A4246A4E870004C86A /* BigView(图片点击放大) */ = {
+			isa = PBXGroup;
+			children = (
+				020779A5246A4E870004C86A /* YSHYImageScrollView.m */,
+				020779A6246A4E870004C86A /* YSHYZoomScrollView.m */,
+				020779A7246A4E870004C86A /* ShowBigViewController.m */,
+				020779A8246A4E870004C86A /* YSHYImageScrollView.h */,
+				020779A9246A4E870004C86A /* YSHYZoomScrollView.h */,
+				020779AA246A4E870004C86A /* ShowBigViewController.h */,
+			);
+			path = "BigView(图片点击放大)";
+			sourceTree = "<group>";
+		};
 		0238D1B623BF3BCE003ABFBB = {
 			isa = PBXGroup;
 			children = (
@@ -341,6 +375,7 @@
 		02844989240F5EF7005E752F /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				020779A4246A4E870004C86A /* BigView(图片点击放大) */,
 				028449DE240F8F52005E752F /* Category(分类) */,
 			);
 			path = Tools;
@@ -375,6 +410,7 @@
 		0284498D240F603B005E752F /* SimpleExample1(基础实例) */ = {
 			isa = PBXGroup;
 			children = (
+				0207799F246A40920004C86A /* TableViewToImageView(表示图转完整图片) */,
 				02790C3324498D5F0068DB66 /* VerificationCodeView(激活码) */,
 				0284498E240F603B005E752F /* frameAnimation(帧动画) */,
 				02844991240F603B005E752F /* NewGuideVC(引导页) */,
@@ -429,8 +465,8 @@
 		028449A7240F603B005E752F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				028449A8240F603B005E752F /* GTSimpleExampleTableViewListVC.m */,
 				028449A9240F603B005E752F /* GTSimpleExampleTableViewListVC.h */,
+				028449A8240F603B005E752F /* GTSimpleExampleTableViewListVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -450,13 +486,13 @@
 				028449AC240F603B005E752F /* GTSimpleUIViewVC.h */,
 				028449B1240F603B005E752F /* GTSimpleUIViewVC.m */,
 				028449AD240F603B005E752F /* GTSimpleUIButtonVC.h */,
-				028449AE240F603B005E752F /* GTSimpleUITextFieldVC.m */,
-				028449AF240F603B005E752F /* GTSimpleUILabelVC.m */,
-				028449B0240F603B005E752F /* GTSimpleUIImageViewVC.m */,
 				028449B2240F603B005E752F /* GTSimpleUIButtonVC.m */,
-				028449B3240F603B005E752F /* GTSimpleUIImageViewVC.h */,
 				028449B4240F603B005E752F /* GTSimpleUILabelVC.h */,
+				028449AF240F603B005E752F /* GTSimpleUILabelVC.m */,
+				028449B3240F603B005E752F /* GTSimpleUIImageViewVC.h */,
+				028449B0240F603B005E752F /* GTSimpleUIImageViewVC.m */,
 				028449B5240F603B005E752F /* GTSimpleUITextFieldVC.h */,
+				028449AE240F603B005E752F /* GTSimpleUITextFieldVC.m */,
 			);
 			path = SimpleDome1;
 			sourceTree = "<group>";
@@ -843,6 +879,7 @@
 				028449D3240F603B005E752F /* GTSimpleDomeTableViewListVC.m in Sources */,
 				028449D0240F603B005E752F /* GTSimpleUIImageViewVC.m in Sources */,
 				028449CD240F603B005E752F /* GTSimpleExampleTableViewListVC.m in Sources */,
+				020779AB246A4E870004C86A /* YSHYImageScrollView.m in Sources */,
 				02844A1F240F8F52005E752F /* UIImage+RoundedCorner.m in Sources */,
 				028449B9240F603B005E752F /* GTAnimationViewController.m in Sources */,
 				02844A1B240F8F52005E752F /* UIImage+Merge.m in Sources */,
@@ -862,10 +899,13 @@
 				028449D2240F603B005E752F /* GTSimpleUIButtonVC.m in Sources */,
 				0238D1C423BF3BCE003ABFBB /* AppDelegate.m in Sources */,
 				02844A2E240F8F52005E752F /* NSString+BJExtension.m in Sources */,
+				020779AD246A4E870004C86A /* ShowBigViewController.m in Sources */,
 				02844A372410ED75005E752F /* GTBaseTableViewController.m in Sources */,
 				02844A1E240F8F52005E752F /* UIImage+Alpha.m in Sources */,
 				02844A25240F8F52005E752F /* UIView+Empty.m in Sources */,
 				02844A23240F8F52005E752F /* UIPickerView+ZFPicker.m in Sources */,
+				020779A3246A419F0004C86A /* GTTableViewToImageViewController.m in Sources */,
+				020779AC246A4E870004C86A /* YSHYZoomScrollView.m in Sources */,
 				02844A30240F8F52005E752F /* NSArray+Log.m in Sources */,
 				02844A1C240F8F52005E752F /* UIImage+Color.m in Sources */,
 				0238D1D523BF3BD1003ABFBB /* main.m in Sources */,
